@@ -1,53 +1,21 @@
-.frnch {
-  // .frnch__video
-
-  &__video {
-  }
-}
 .video-block {
-  // .video-block__title
-
   &__title {
     font-size: 48px;
     line-height: 56px;
     margin-top: 24px;
   }
 
-  // .video-block__inner
-
   &__inner {
     margin-top: 40px;
     display: flex;
+    justify-content: center;
   }
-
-  // .video-block__inner-video
-
-  &__inner-video {
-  }
-
-  // .video-block__inner-video-content
 
   &__inner-video-content {
     iframe {
       border-radius: 25px;
     }
   }
-
-  // .video-block__inner-video-btn
-
-  &__inner-video-btn {
-    // .video-block__inner-video-btn--icon
-
-    &--icon {
-    }
-
-    // .video-block__inner-video-btn--text
-
-    &--text {
-    }
-  }
-
-  // .video-block__inner-right
 
   &__inner-right {
     margin: 16px 0 16px 32px;
@@ -56,14 +24,10 @@
     min-width: 256px;
   }
 
-  // .video-block__inner-right-title
-
   &__inner-right-title {
     font-size: 24px;
     line-height: 32px;
   }
-
-  // .video-block__inner-right-text
 
   &__inner-right-text {
     font-size: 16px;
@@ -71,15 +35,12 @@
     margin-top: 16px;
   }
 
-  // .video-block__inner-right-votes
-
   &__inner-right-votes {
     text-align: center;
   }
 }
 .social-block {
   margin-top: 24px;
-  // .social-block__item
 
   &__item {
     position: relative;
@@ -95,8 +56,6 @@
       background-color: #d06313;
     }
   }
-
-  // .social-block__item-bg
 
   &__item-bg {
     top: 0;
@@ -115,12 +74,67 @@
     padding-bottom: 4px;
   }
 
-  // .social-block__item-hover
-
   &__item-hover {
     z-index: 10;
     position: relative;
     width: 60px;
     height: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .video-block {
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    &__inner {
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    &__inner-video-content {
+      iframe {
+        width: 343px;
+        height: 194px;
+      }
+    }
+
+    &__inner-right {
+      margin: 32px 0px 0px 0px;
+
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__inner-right-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    &__inner-right-text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__inner-right-votes {
+      display: none;
+    }
+  }
+  .social-block {
+    display: flex;
+
+    &__item {
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    &__item-bg {
+      display: none;
+    }
   }
 }

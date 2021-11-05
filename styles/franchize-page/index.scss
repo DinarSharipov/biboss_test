@@ -1,36 +1,33 @@
 // Header
 @import "./header/video.scss";
 @import "./header/event.scss";
-@import "./header/reference.scss";
+@import "./header/offer.scss";
 
 // Main
 @import "./main/about-company.scss";
 @import "./main/price-block";
-
-@import "./UI/manager-icon";
-
-//members
-@import "./members/members";
+@import "./main/members";
 
 //UI
-
+@import "./UI/manager-icon";
 @import "./UI/captcha";
 @import "./UI/order-form";
 
-.titles {
-  font-size: 24px;
-  line-height: 32px;
-}
 .header-wrap {
   padding: 34px 0 125px 0;
   background: linear-gradient(180deg, rgb(255, 255, 255), rgb(236, 238, 242));
 }
 
-.frnch {
-}
-.main {
+.main-wrapper {
+  position: relative;
+  margin-top: 117px;
 }
 
-.main-wrapper {
-  margin-top: 117px;
+@media (max-width: 375px) {
+  .header-wrap {
+    padding: 32px 0;
+  }
+  .main-wrapper {
+    margin-top: 32px;
+  }
 }

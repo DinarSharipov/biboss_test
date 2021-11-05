@@ -2,8 +2,6 @@
   display: flex;
   align-items: center;
 
-  // .frnch-event__img
-
   &__img {
     position: relative;
     margin-right: 16px;
@@ -12,21 +10,10 @@
       display: flex;
     }
   }
+}
 
-  // .frnch-event__img-bg
-
-  // .frnch-event__content
-
-  &__content {
-  }
-
-  // .frnch-event__content-title
-
-  &__content-title {
-  }
-
-  // .frnch-event__content-description
-
-  &__content-description {
+@media (max-width: 375px) {
+  .frnch-event {
+    justify-content: center;
   }
 }

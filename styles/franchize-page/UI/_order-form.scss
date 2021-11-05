@@ -13,17 +13,6 @@
   &__left-captcha {
     margin-bottom: 8px;
   }
-  // .order-form__mngr
-
-  &__mngr {
-  }
-
-  // .order-form__form
-
-  &__form {
-  }
-
-  // .order-form__left
 
   &__left {
     display: flex;
@@ -31,8 +20,6 @@
     justify-content: space-between;
     max-width: 376px;
   }
-
-  // .order-form__left-input
 
   &__left-input {
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -63,8 +50,6 @@
     height: 86px;
   }
 
-  // .order-form__button
-
   &__button {
     padding: 13px 98px;
     font-weight: bold;
@@ -74,38 +59,20 @@
     background-color: #0d870d;
   }
 
-  // .order-form__description
-
   &__description {
     max-width: 376px;
   }
-
-  // .order-form__description-title
-
-  &__description-title {
-  }
-
-  // .order-form__description-item
 
   &__description-item {
     display: flex;
     align-items: flex-start;
     margin-top: 16px;
 
-    // .order-form__description-item--icon
-
     &--icon {
       margin-right: 11px;
       margin-top: 8px;
     }
   }
-
-  // .order-form__description-text
-
-  &__description-text {
-  }
-
-  // .order-form__confidential
 
   &__confidential {
     display: flex;
@@ -114,53 +81,38 @@
     line-height: 20px;
     align-items: center;
     color: rgba(0, 0, 0, 0.4);
+    margin-top: 18px;
   }
-
-  // .order-form__confidential-icon
 
   &__confidential-icon {
     margin-right: 16px;
   }
-
-  // .order-form__confidential-text
-
-  &__confidential-text {
-  }
 }
-.manager-icon {
-  // .manager-icon__img
 
-  &__img {
-  }
+@media (max-width: 375px) {
+  .order-form {
+    flex-wrap: wrap;
 
-  // .manager-icon__info
+    &__button {
+      padding: 13px 50px;
+    }
 
-  &__info {
-  }
+    &__description {
+      position: relative;
+      &::after {
+        position: absolute;
+        top: -24px;
+        content: "";
+        height: 1px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      margin-top: 49px;
+      max-width: 376px;
+    }
 
-  // .manager-icon__info-name
-
-  &__info-name {
-  }
-
-  // .manager-icon__info-role
-
-  &__info-role {
-  }
-}
-.captcha {
-  // .captcha__checkbox
-
-  &__checkbox {
-  }
-
-  // .captcha__title
-
-  &__title {
-  }
-
-  // .captcha__description
-
-  &__description {
+    &__description-title {
+      text-align: center;
+    }
   }
 }

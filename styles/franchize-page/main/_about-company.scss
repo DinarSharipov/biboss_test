@@ -15,18 +15,6 @@ hr {
     line-height: 32px;
   }
 
-  // .about-company__text
-
-  &__text {
-  }
-
-  // .about-company__text-item
-
-  &__text-item {
-  }
-
-  // .about-company__link
-
   &__link {
     margin-top: 16px;
     img {
@@ -34,37 +22,26 @@ hr {
     }
   }
 
-  // .about-company__price-block
-
   &__price-block {
     margin-top: 32px;
   }
-
-  // .about-company__description
 
   &__description {
     margin-top: 32px;
   }
 
-  // .about-company__description-title
-
   &__description-title {
   }
 
-  // .about-company__description-text
-
   &__description-text {
   }
-
-  // .about-company__gallery
 
   &__gallery {
     margin-top: 32px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
-
-  // .about-company__gallery-photo
 
   &__gallery-photo {
     border-radius: 6px;
@@ -78,21 +55,37 @@ hr {
 .indicators {
   width: 232px;
 
-  &__title {
-  }
-  // .indicators__item
-
   &__item {
     margin-bottom: 16px;
   }
+}
 
-  // .indicators__item-title
-
-  &__item-title {
+@media (max-width: 375px) {
+  .company-info {
+    margin-top: 32px;
   }
 
-  // .indicators__item-text
+  hr {
+    margin: 16px 0 24px 0;
+  }
+  .about-company {
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
 
-  &__item-text {
+    &__text-item {
+      margin-bottom: 8px;
+    }
+
+    &__gallery-photo {
+      height: 167px;
+      width: 167px;
+      margin-top: 8px;
+    }
+  }
+
+  .indicators {
+    display: none;
   }
 }
