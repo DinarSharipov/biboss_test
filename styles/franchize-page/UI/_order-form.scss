@@ -1,0 +1,166 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #eceef2;
+  border-radius: 16px;
+}
+
+.order-form {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  &__left-captcha {
+    margin-bottom: 8px;
+  }
+  // .order-form__mngr
+
+  &__mngr {
+  }
+
+  // .order-form__form
+
+  &__form {
+  }
+
+  // .order-form__left
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 376px;
+  }
+
+  // .order-form__left-input
+
+  &__left-input {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    height: 42px;
+    margin-bottom: 8px;
+
+    background-size: 20px auto;
+    padding-left: 44px;
+    &:nth-child(1) {
+      background: url("../../../images_main/user_icon.svg") no-repeat;
+      background-position: 18px, center;
+    }
+    &:nth-child(2) {
+      background: url("../../../images_main/email_icon.svg") no-repeat;
+      background-position: 16px, center;
+    }
+    &:nth-child(3) {
+      background: url("../../../images_main/phone_icon.svg") no-repeat;
+      background-position: 20px, center;
+    }
+    &:nth-child(4) {
+      padding-left: 10px;
+    }
+  }
+
+  textarea {
+    height: 86px;
+  }
+
+  // .order-form__button
+
+  &__button {
+    padding: 13px 98px;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    background-color: #0d870d;
+  }
+
+  // .order-form__description
+
+  &__description {
+    max-width: 376px;
+  }
+
+  // .order-form__description-title
+
+  &__description-title {
+  }
+
+  // .order-form__description-item
+
+  &__description-item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 16px;
+
+    // .order-form__description-item--icon
+
+    &--icon {
+      margin-right: 11px;
+      margin-top: 8px;
+    }
+  }
+
+  // .order-form__description-text
+
+  &__description-text {
+  }
+
+  // .order-form__confidential
+
+  &__confidential {
+    display: flex;
+    max-width: 376px;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+  // .order-form__confidential-icon
+
+  &__confidential-icon {
+    margin-right: 16px;
+  }
+
+  // .order-form__confidential-text
+
+  &__confidential-text {
+  }
+}
+.manager-icon {
+  // .manager-icon__img
+
+  &__img {
+  }
+
+  // .manager-icon__info
+
+  &__info {
+  }
+
+  // .manager-icon__info-name
+
+  &__info-name {
+  }
+
+  // .manager-icon__info-role
+
+  &__info-role {
+  }
+}
+.captcha {
+  // .captcha__checkbox
+
+  &__checkbox {
+  }
+
+  // .captcha__title
+
+  &__title {
+  }
+
+  // .captcha__description
+
+  &__description {
+  }
+}

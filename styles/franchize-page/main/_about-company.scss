@@ -1,0 +1,98 @@
+.company-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  margin: 1rem 0;
+}
+.about-company {
+  max-width: 832px;
+  // .about-company__title
+
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  // .about-company__text
+
+  &__text {
+  }
+
+  // .about-company__text-item
+
+  &__text-item {
+  }
+
+  // .about-company__link
+
+  &__link {
+    margin-top: 16px;
+    img {
+      margin-left: 16px;
+    }
+  }
+
+  // .about-company__price-block
+
+  &__price-block {
+    margin-top: 32px;
+  }
+
+  // .about-company__description
+
+  &__description {
+    margin-top: 32px;
+  }
+
+  // .about-company__description-title
+
+  &__description-title {
+  }
+
+  // .about-company__description-text
+
+  &__description-text {
+  }
+
+  // .about-company__gallery
+
+  &__gallery {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .about-company__gallery-photo
+
+  &__gallery-photo {
+    border-radius: 6px;
+  }
+
+  &__order-form {
+    margin-top: 32px;
+  }
+}
+
+.indicators {
+  width: 232px;
+
+  &__title {
+  }
+  // .indicators__item
+
+  &__item {
+    margin-bottom: 16px;
+  }
+
+  // .indicators__item-title
+
+  &__item-title {
+  }
+
+  // .indicators__item-text
+
+  &__item-text {
+  }
+}
